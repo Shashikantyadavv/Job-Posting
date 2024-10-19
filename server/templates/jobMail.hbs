@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Job Posting</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .container { padding: 20px; }
+        .footer { margin-top: 20px; font-size: 12px; color: #777; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>New Job Posting: {{title}}</h1>
+        <p>We are excited to announce a new job posting at <strong>{{companyName}}</strong>!</p>
+        
+        <h2>Job Details:</h2>
+        <p><strong>Description:</strong> {{description}}</p>
+        <p><strong>Experience Level:</strong> {{experienceLevel}}</p>
+        <p><strong>Application Deadline:</strong> {{endDate}}</p>
+
+        <h2>About Us:</h2>
+        <p>{{companyDescription}}</p>
+
+        <p>If you are interested, please apply through our website or reply to this email.</p>
+        <p>Best regards,<br>{{companyName}}</p>
+    </div>
+    <div class="footer">
+        <p>{{companyAddress}} | {{companyPhone}}</p>
+    </div>
+</body>
+</html>
