@@ -11,7 +11,7 @@ const CompanyLogin = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      response = await axios.post('http://localhost:5000/api/auth/login', { email, password });
+      response = await axios.post('https://vercel.live/link/job-posting-nine.vercel.app?via=deployment-domains-list&p=1&page=/api/auth/login', { email, password });
       localStorage.setItem('token', response.data.token);
       navigate('/')
       const id = response.data.id;

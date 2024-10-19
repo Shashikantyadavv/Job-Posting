@@ -20,7 +20,7 @@ const CompanyRegister = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/auth/register', formData);
+      await axios.post('https://vercel.live/link/job-posting-nine.vercel.app?via=deployment-domains-list&p=1&page=/api/auth/register', formData);
       alert('Registration successful! Please verify your email and Phone.');
       navigate(`/verify/${email}`);
     } catch (error) {

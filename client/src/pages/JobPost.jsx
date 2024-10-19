@@ -16,7 +16,7 @@ const JobPost = () => {
   const { id } = useParams();
   const getCompany = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/company/${id}`);
+      const response = await axios.get(`https://vercel.live/link/job-posting-nine.vercel.app?via=deployment-domains-list&p=1&page=/api/company/${id}`);
       setCompany(response.data);
     } catch (err) {
       setError('Failed to fetch company details.');
@@ -52,7 +52,7 @@ const JobPost = () => {
     };
 
     try {
-      await axios.post('http://localhost:5000/api/jobs', { ...formData, company }, config);
+      await axios.post('https://vercel.live/link/job-posting-nine.vercel.app?via=deployment-domains-list&p=1&page=/api/jobs', { ...formData, company }, config);
       alert('Job posted and emails sent to candidates.');
       setFormData({
         title: '',

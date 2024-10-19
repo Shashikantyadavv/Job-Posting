@@ -11,7 +11,7 @@ const VerifyOtp = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`http://localhost:5000/api/auth/verify/${email}/${otp}`);
+      await axios.post(`https://vercel.live/link/job-posting-nine.vercel.app?via=deployment-domains-list&p=1&page=/api/auth/verify/${email}/${otp}`);
       alert('Otp Verification successful!');
       navigate('/login');
     } catch (error) {
@@ -24,7 +24,7 @@ const VerifyOtp = () => {
   const handleOtp = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/auth/send', { email });
+      await axios.post('https://vercel.live/link/job-posting-nine.vercel.app?via=deployment-domains-list&p=1&page=/api/auth/send', { email });
       alert('Otp sent Successfully');
       setOtpSent(true);
     } catch (error) {
